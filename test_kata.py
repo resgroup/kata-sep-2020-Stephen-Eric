@@ -1,4 +1,4 @@
-from kata import TennisGame,add_score
+from kata import TennisGame
 
 def test_kata_score_0_0_server_win():
      assert TennisGame(0,0).add_score(0)==(15,0)
