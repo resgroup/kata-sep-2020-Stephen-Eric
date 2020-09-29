@@ -1,10 +1,10 @@
-class TennisGame:
+class TennisGame():
 
     def __init__(self,server_current_score,receiver_current_score):
-        self.server_current_score = 0
-        self.receiver_current_score = 0
+        self.server_current_score = server_current_score
+        self.receiver_current_score = receiver_current_score
 
-    #def add_score(self,server_current_score,receiver_current_score, point_winner):
+
     def add_score(self,point_winner):
         # point_winner = 0 --> server wins the point
         # point_winner = 1 --> receiver wins the point
