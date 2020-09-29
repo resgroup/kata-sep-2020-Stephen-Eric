@@ -4,8 +4,7 @@ class TennisGame:
         self.server_current_score = 0
         self.receiver_current_score = 0
 
-    #def add_score(self,server_current_score,receiver_current_score, point_winner):
-    def add_score(self,point_winner):
+    def add_score(self,server_current_score,receiver_current_score, point_winner):
         # point_winner = 0 --> server wins the point
         # point_winner = 1 --> receiver wins the point
         if point_winner == 1:
