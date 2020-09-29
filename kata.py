@@ -10,9 +10,14 @@ def add_score(server_current_score, receiver_current_score, point_winner):
             receiver_current_score = receiver_current_score + 10
         elif receiver_current_score == 40:    
             if receiver_current_score == server_current_score:
-                receiver_current_score = A
+                receiver_current_score = "A"
             else:
-                receiver_current_score = Win
+                receiver_current_score = "Win"
+        elif receiver_current_score == "A" and point_winner==1:
+            receiver_current_score="Win"
+        else:
+            receiver_current_score=40
+
     else:
          if server_current_score == 0:
             server_current_score = server_current_score + 15
@@ -22,8 +27,8 @@ def add_score(server_current_score, receiver_current_score, point_winner):
             server_current_score = server_current_score + 10
          elif server_current_score == 40:    
             if server_current_score == receiver_current_score:
-                server_current_score = A
+                server_current_score = "A"
             else:
-                server_current_score = Win
+                server_current_score = "Win"
         
     return server_current_score,receiver_current_score
